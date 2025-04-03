@@ -14,7 +14,7 @@ const Dashboard = () => {
                     <div className='rounded-5 d-flex justify-content-around' style={{ backgroundColor: '#F4F0FE' }}>
                         <div>
                             <div className='d-flex justify-content-between p-3'>
-                                <h3>Blood Pressure</h3>
+                                <p style={styles.heading}>Blood Pressure</p>
                                 <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
                                     <InputLabel id="demo-simple-select-standard-label">Last 6 months</InputLabel>
                                     <Select
@@ -35,32 +35,32 @@ const Dashboard = () => {
 
                                 <div className="d-flex ">
                                     <div style={{ width: '15px', height: '15px', backgroundColor: 'rgb(255, 99, 132)', borderRadius: '50%' }}></div>
-                                    <h6 className="ms-3">Systolic</h6>
+                                    <p style={styles.subHeading} className="ms-3">Systolic</p>
 
                                 </div>
-                                <h3>160</h3>
+                                <p style={styles.count}>160</p>
                                 <div className='d-flex '>
-                                    <img height={8} width={12} src={arrowUp} className='mt-2 ' />
-                                    <p className='mx-3'>Higher than Average</p>
+                                    <img height={5} width={10} src={arrowUp} className='mt-2 ' />
+                                    <p style={styles.status} className='mx-3'>Higher than Average</p>
                                 </div>
 
                                 <div className="d-flex ">
                                     <div style={{ width: '15px', height: '15px', backgroundColor: 'rgb(53, 162, 235)', borderRadius: '50%' }}></div>
-                                    <h6 className="ms-3">Diastolic</h6>
+                                    <p style={styles.subHeading} className="ms-3">Diastolic</p>
 
                                 </div>
-                                <h3>78</h3>
+                                <p style={styles.count}>78</p>
                                 <div className='d-flex '>
-                                    <img height={8} width={12} src={arrowDown} className='mt-2 ' />
-                                    <p className='mx-3'>Lower than Average</p>
+                                    <img height={5} width={10} src={arrowDown} className='mt-2 ' />
+                                    <p style={styles.status} className='mx-3'>Lower than Average</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <CardComponent/>
+                    <CardComponent />
                 </Grid>
                 <Grid xs={3}>
-                    <LabResults/>
+
                 </Grid>
             </Grid>
         </>
@@ -68,3 +68,26 @@ const Dashboard = () => {
 }
 
 export default Dashboard
+
+const styles = {
+    heading: {
+        font: 'normal normal bold 18px/24px Manrope',
+        letterSpacing: '0px',
+        color: '#072635',
+    },
+    subHeading: {
+        font: 'normal normal bold 14px/19px Manrope',
+        letterSpacing: '0px',
+        color: '#072635',
+    },
+    count: {
+        font: 'normal normal bold 22px/30px Manrope',
+        letterSpacing: '0px',
+        color: '#072635',
+    },
+    status: {
+        font: 'normal normal normal 14px/19px Manrope',
+        letterSpacing: '0px',
+        color: '#072635',
+    }
+}
