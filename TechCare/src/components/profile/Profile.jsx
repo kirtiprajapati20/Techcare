@@ -1,17 +1,17 @@
 import React from "react";
-import "../style/Profile.css";
-import profilePic from "../assets/profile.png";
-import BirthIcon from "../assets/BirthIcon.svg";
-import FemaleIcon from "../assets/FemaleIcon.svg";
-import PhoneIcon from "../assets/PhoneIcon.svg";
-import InsuranceIcon from "../assets/InsuranceIcon.svg";
+import "../../assets/css/Profile.css";
+import profilePic from "../../assets/images/profile.png";
+import BirthIcon from "../../assets/images/BirthIcon.svg";
+import FemaleIcon from "../../assets/images/FemaleIcon.svg";
+import PhoneIcon from "../../assets/images/PhoneIcon.svg";
+import InsuranceIcon from "../../assets/images/InsuranceIcon.svg";
 
 
 const Profile = () => {
   return (
     <div className="container mt-4">
       <div className="row justify-content-end">
-        <div className="col-md-2">
+        <div className="col-md-4">
           <div className="card profile-card text-center p-3">
             <img src={profilePic} className="profile-img" alt="Profile" />
             <div className="card-body">

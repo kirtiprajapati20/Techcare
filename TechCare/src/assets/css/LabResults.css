@@ -1,0 +1,21 @@
+.lab-card {
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 20px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.download-icon {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.download-icon:hover {
+    color: #0056b3;
+}

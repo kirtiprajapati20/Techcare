@@ -1,7 +1,9 @@
 import React from "react";
-import Profile from "./Profile";
+import Profile from "./profile/Profile";
 import Header from "./header/Header";
 import "../assets/css/Header.css";
+import DiagnosticList from "./profile/DiagnosticList";
+import LabResults from "./profile/LabResults";
 
 const Dashboard = () => {
   return (
@@ -11,6 +13,10 @@ const Dashboard = () => {
       </div>
       <div>Dashboard</div>
       <Profile />
+      <div className="container">
+      <DiagnosticList />
+      <LabResults />
+    </div>
     </>
   );
 };
