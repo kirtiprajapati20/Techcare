@@ -4,7 +4,7 @@ import { FormControl, Grid, InputLabel, MenuItem, Select } from '@mui/material'
 import arrowUp from '../assets/ArrowUp.png'
 import arrowDown from '../assets/ArrowDown.png'
 import CardComponent from './CardComponent'
-import LabResults from './LabResults'
+
 const Dashboard = () => {
     return (
         <>
