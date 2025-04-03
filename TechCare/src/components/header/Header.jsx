@@ -1,92 +1,88 @@
 import React from "react";
-import "../../assets/css/Header.css"
-const Header =()=>{
-    return(
-        <>
-           <nav className="navbar navbar-light  px-4  ">
-      <div className="logo">
-        <img src="/images/logo.png" alt="Logo" className=" nav-img" />
-        <div className="input-group">
-          <span className="input-group-text bg-white border-end-0 p-0">
-            <img src="/images/icons/search.svg" className=" ps-2"/>
-            {/* <i className="fa fa-search ps-3 me-1" style={{color:"#9C8E73"}} ></i> */}
-          </span>
-          <input
-            type="text"
-            className="form-control border-start-0"
-            placeholder="Search"
-          />
-        </div>
-      </div>
-      <div className="left ms-auto">
-        <button className="ask-button p-1 px-2  me-2">
-          Ask Me Anything <img src="/images/icons/msg.svg" />
-        </button>
-        <div className="mt-2">
-          <div>
-            <label>
-              <input type="checkbox" id="modeToggle" />
-              <div class="toggle-switch">
-                <img
-                  src="/images/icons/sun-svgrepo-com 1.svg"
-                  className="sun-icon"
-                />
-                <img
-                  src="/images/icons/moon-svgrepo-com 3.png"
-                  className="moon-icon"
-                />
-              </div>
-            </label>
+import "../../assets/css/Header.css";
+const Header = () => {
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div className="container-fluid">
+          <div className="logo">
+            <img src="/images/TestLogo.svg" />
+          </div>
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <img src="/images/home_FILL0_wght300_GRAD0_opsz24.svg" />
+                  Overview
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" href="#">
+                  <img src="/images/group_FILL0_wght300_GRAD0_opsz24.svg" />
+                  Patients
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <img src="/images/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" />{" "}
+                  Schedule
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <img src="/images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" />{" "}
+                  Message
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <img src="/images/credit_card_FILL0_wght300_GRAD0_opsz24.svg" />{" "}
+                  Transactions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="dropdown">
+            <button
+              className="btn profile-dropdown"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+
+            >
+              <img
+                src="/public/images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.jpg"
+                alt="Profile Picture"
+                className="profile-pic"
+              />
+              <span className="user-info">
+                Dr. Jose Simmons <br />
+                <p>General Practitioner</p>
+              </span>
+            </button>
+          </div>
+          
+          <div className="me-3 menu-items">
+            <img src="/images/settings_FILL0_wght300_GRAD0_opsz24.svg" />
+            <img src="/images/more_vert_FILL0_wght300_GRAD0_opsz24.svg" />
           </div>
         </div>
-        {/* <Dropdown>
-          <Dropdown.Toggle
-            as="button"
-            className="btn p-0 ms-1 mt-1  custom-dropdown"
-          >
-            <img
-              src="/images/icons/language.svg"
-              className=" me-2"
-              alt="lang"
-            />
-            En
-            <img
-              src="/images/icons/Iconset.svg"
-              className="ms-1"
-              width="15"
-            />
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item>English</Dropdown.Item>
-            <Dropdown.Item>Spanish</Dropdown.Item>
-            <Dropdown.Item>French</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-        <Dropdown>
-          <Dropdown.Toggle
-            as="button"
-            className="btn p-0 ms-1 mt-1  custom-dropdown"
-          >
-            <img
-              src="/images/5.jpg"
-              alt="User"
-              className="user rounded-circle  "
-            />
-            <img
-              src="/images/icons/Iconset.svg"
-              className="ms-1"
-              width="15 p-0"
-            />
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item>Logout</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown> */}
-      </div>
-    </nav>
-        </>
-    )
-}
+      </nav>
+    </>
+  );
+};
 export default Header;
