@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../assets/css/Sidebar.css";
 import axios from "axios";
-
+import imgSearch from '../../assets/images/search_FILL0_wght300_GRAD0_opsz24.svg'
 const Sidebar = () => {
   const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -45,7 +45,7 @@ const Sidebar = () => {
         <div className="sidebar">
           <div className="top">
             <p>Patients</p>
-            <img src="/images/search_FILL0_wght300_GRAD0_opsz24.svg" alt="Search" />
+            <img src={imgSearch} alt="Search" />
           </div>
           {/* Make sure userData is an array before mapping */}
           {Array.isArray(userData) && userData.length > 0 ? (

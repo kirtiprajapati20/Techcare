@@ -1,0 +1,49 @@
+/* .diagnostic-card {
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 20px;
+    border: none;
+}
+
+.table thead {
+    background-color: #F6F7F8;
+    border-radius: 24px;
+
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.diagnostic-card th {
+    background-color: #F6F7F8 !important;
+    border-radius: 24px;
+}
+
+ */
+
+.diagnostic-card {
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 20px;
+}
+
+.diagnostic-card thead tr th {
+    background-color: #F6F7F8 !important;
+}
+
+.diagnostic-card thead tr {
+border-radius: 24px;}
+
+.diagnostic-card th {
+    font-weight: bold;
+    padding: 12px;
+    color: #333;  
+}
+
+.diagnostic-card tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
